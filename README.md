@@ -6,8 +6,8 @@ A modern Netflix-style streaming dashboard built with **Next.js 14**, **TypeScri
 
 ## 🔗 Links
 
-**Live Demo:** [Add Vercel URL here]  
-**Repository:** [Add GitHub URL here]
+**Live Demo:** [https://stream-flix-gold.vercel.app/]  
+**Repository:** [https://github.com/nikhilshakya07/StreamFlix]
 
 ---
 
@@ -36,8 +36,8 @@ A modern Netflix-style streaming dashboard built with **Next.js 14**, **TypeScri
 
 ### 1. Clone & Install
 ```bash
-git clone <repo-url>
-cd streaming-dashboard
+git clone https://github.com/nikhilshakya07/StreamFlix.git
+cd StreamFlix
 npm install
 ```
 
@@ -61,7 +61,7 @@ Open http://localhost:3000
 
 ## 📁 Project Structure
 ```
-streaming-dashboard/
+StreamFlix/
 ├── app/
 │   ├── movie/[id]/page.tsx    # Movie detail pages
 │   ├── page.tsx               # Homepage
