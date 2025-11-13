@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 StreamFlix - Streaming Dashboard
 
-## Getting Started
+A modern Netflix-style streaming dashboard built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**.
 
-First, run the development server:
+---
 
+## 🔗 Links
+
+**Live Demo:** [Add Vercel URL here]  
+**Repository:** [Add GitHub URL here]
+
+---
+
+## ✨ Features
+
+- 🎥 Browse trending, popular, and top-rated movies
+- 🔍 Search functionality
+- 📱 Fully responsive design
+- ⚡ Server-side rendering with Next.js 14
+- 🎨 Smooth animations and hover effects
+- 🖼️ Optimized images with Next.js Image
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js 14** - App Router
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **TMDB API** - Movie data
+- **Vercel** - Deployment
+
+---
+
+## 🚀 Quick Start
+
+### 1. Clone & Install
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repo-url>
+cd streaming-dashboard
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Add Environment Variables
+Create `.env.local`:
+```env
+NEXT_PUBLIC_TMDB_API_KEY=your_api_key_here
+NEXT_PUBLIC_TMDB_IMAGE_BASE_URL=https://image.tmdb.org/t/p
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Get your free API key: https://www.themoviedb.org/settings/api
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Run
+```bash
+npm run dev
+```
 
-## Learn More
+Open http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Structure
+```
+streaming-dashboard/
+├── app/
+│   ├── movie/[id]/page.tsx    # Movie detail pages
+│   ├── page.tsx               # Homepage
+│   └── layout.tsx             # Root layout
+├── components/
+│   ├── ui/                    # Header, Hero, MovieRow
+│   └── shared/                # MovieCard
+├── lib/
+│   ├── tmdb.ts               # API functions
+│   └── utils.ts              # Helpers
+├── types/
+│   └── movie.ts              # TypeScript types
+└── .env.local                # Environment variables
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🎯 Key Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Homepage
+- Hero banner with trending movie
+- 4 movie categories with horizontal scrolling
+- Interactive search bar
+- Smooth hover effects on cards
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Movie Details
+- Dynamic routes (`/movie/[id]`)
+- Full movie information
+- Backdrop and poster images
+- Back navigation
+
+---
+
+## 📦 Deployment (Vercel)
+
+1. Push code to GitHub
+2. Import project on [vercel.com](https://vercel.com)
+3. Add environment variables in Vercel dashboard
+4. Deploy!
+
+---
+
+## 📜 Scripts
+```bash
+npm run dev      # Development
+npm run build    # Build for production
+npm run start    # Start production
+npm run lint     # Lint code
+```
+
+---
+
+## 🐛 Known Issues
+
+- Search currently shows alert (can be extended with TMDB search API)
+
+---
+
+## 📄 License
+
+MIT - Free to use for learning
+
+---
+
+Built with Next.js 14 + TypeScript + Tailwind CSS
